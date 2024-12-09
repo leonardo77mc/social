@@ -1,0 +1,70 @@
+<div class="container shadow border" style="margin-top: 25px;">
+  <!-- Sección de precios -->
+  <div class="pricing">
+    <div class="price-item selected">
+      <h4>80 Likes</h4>
+      <div style="font-size:40px;margin-top:-8px; margin-bottom: 0;">😏</div>
+      <p class="price" style="margin-top: -5px;">$0.99</p>
+      <p class="tag">🔥 Crazy Low</p>
+    </div>
+    <div class="price-item">
+      <h4>500 Likes</h4>
+      <div style="font-size:40px;margin-top:-8px; margin-bottom: 0;">😎</div>
+      <p class="price-no-selected">$4.99</p>
+      <p class="tag-no-selected">🔥 Best Seller</p>
+    </div>
+    <div class="price-item">
+      <h4>1,200 Likes</h4>
+      <div style="font-size:40px;margin-top:-8px; margin-bottom: 0;">🤩</div>
+      <p class="price-no-selected">$9.99</p>
+      <p class="tag-no-selected">+200 Bonus</p>
+    </div>
+    <div class="price-item">
+      <h4>2,500 Likes</h4>
+      <div style="font-size:40px;margin-top:-8px; margin-bottom: 0;">🤑</div>
+      <p class="price-no-selected">$19.99</p>
+      <p class="tag-no-selected">+500 Bonus</p>
+    </div>
+    <div class="price-item">
+      <h4>6,000 Likes</h4>
+      <div style="font-size:40px;margin-top:-8px; margin-bottom: 0;">🥳</div>
+      <p class="price-no-selected">$49.99</p>
+      <p class="tag-no-selected">+1,500 Bonus</p>
+    </div>
+    <div class="price-item">
+      <h4>14,000 Likes</h4>
+      <div style="font-size:40px;margin-top:-8px; margin-bottom: 0;">👑</div>
+      <p class="price-no-selected">$99.99</p>
+      <p class="tag-no-selected">+4,000 Bonus</p>
+    </div>
+  </div>
+
+  <!-- Usuario y precio total -->
+  <div class="user-section">
+    <div class="likes-summary">
+      <p>Total: $0.99</p>
+    </div>
+    <div class="user-image">
+      <img [src]="avatarUrl" alt="User profile" class="img-profile">
+    </div>
+  </div>
+
+  <!-- Lista de publicaciones -->
+  <div class="posts">
+    <div class="post" *ngFor="let post of posts">
+      <img [src]="post.img" [alt]="post.description" />
+      <p>{{ post.likes }} Likes</p>
+    </div>
+  </div>
+
+
+  <div class="flex-colum justify-self mt-1-5" style="gap: 10px;">
+    <span class="align-seft-center" style="font-size: 17px; font-weight: bold;">Selecciona la cantidad</span>
+    <a class="content-advertising spaceAround">
+      <fa-icon [icon]="faFaceSmileWink"></fa-icon>
+      <span class="space-8 m5">Comprar seguidores</span>
+      <fa-icon [icon]="faArrowRight" class="m5"></fa-icon>
+    </a>
+  </div>
+
+</div>
