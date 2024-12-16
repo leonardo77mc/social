@@ -6,8 +6,10 @@
     "start": "ng serve",
     "no-reload": "ng serve --live-reload false",
     "build": "ng build --prod",
+    "build:prod": "ng build --configuration production --base-href /social/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "copy_root": "cp -r dist/social/* . ",
     "serve:ssr:social": "node dist/social/server/server.mjs"
   },
   "private": true,
