@@ -7,3 +7,18 @@ export interface IUsernameInfo {
   id: number;
   cursor: string;
 }
+
+export interface IPostResponse {
+  cursor: string;
+  posts: IPost[];
+}
+
+export interface IPost {
+  "shortcode": string,
+  "likes": number,
+  "comments": number,
+  "display_url": string,
+  "is_video": boolean,
+  "video_view_count": number | null;
+  "selected"?: boolean;
+}
